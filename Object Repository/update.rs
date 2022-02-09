@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getlist</name>
+   <name>update</name>
    <tag></tag>
-   <elementGuidId>ba314373-8018-4f3b-9eb7-9728e05c155c</elementGuidId>
+   <elementGuidId>b336090f-9e91-4c06-beaf-366fc5825351</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
@@ -14,8 +14,8 @@
    <katalonVersion>8.2.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${GlobalVariable.BaseUrl}/api/users?page=1</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${GlobalVariable.BaseUrl}/api/users/2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -37,6 +37,7 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.verifyElementPropertyValue(response, 'data[0].email', &quot;george.bluth@reqres.in&quot;)</verificationScript>
+WS.verifyElementPropertyValue(response, 'updatedAt', &quot;2022-02-09T14:27:33.229Z&quot;)
+WS.verifyElementPropertyValue(response, 'updatedAt', &quot;2022-02-09T14:30:26.290Z&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

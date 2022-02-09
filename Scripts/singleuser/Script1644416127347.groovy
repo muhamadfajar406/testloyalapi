@@ -17,6 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response =  WS.sendRequest(findTestObject('getlist'))
+response =  WS.sendRequest(findTestObject('getlistsingeluser'))
 WS.verifyResponseStatusCode(response, 200)
-WS.verifyElementPropertyValue(response, 'data[0].email', "george.bluth@reqres.in")
